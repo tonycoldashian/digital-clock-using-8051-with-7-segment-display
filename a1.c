@@ -8,12 +8,14 @@ sbit d1=P1^3;
 sbit d0=P1^4;
 sbit d= P1^5;
 unsigned int v1,v2,v3,v4,v0,v5,v6;
+
 void delay(unsigned int count)
 {
 unsigned int j,k;
 for (j=0;j<=count;j++)
 for (k=0;k<=5;k++);
 }
+
 void main()
 {
  v1=v2=v3=v4=v0=v5=v6=0;
@@ -95,6 +97,7 @@ void main()
     v5=0;
 	v6=0;
     }
+	
 delay(msec);
 P2=0xFF;
 }
